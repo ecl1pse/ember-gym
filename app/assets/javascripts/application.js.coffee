@@ -1,5 +1,5 @@
 #= require jquery
-#/= require jquery_ujs
+#= require jquery_ujs
 #= require handlebars
 #= require ember
 #= require ember-data
@@ -8,4 +8,3 @@
 
 # for more details see: http://emberjs.com/guides/application/
 window.EmberGym = Ember.Application.create()
-
