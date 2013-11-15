@@ -10,3 +10,7 @@ EmberGym.Router.map ->
 EmberGym.UsersRoute = Ember.Route.extend
   model: ->
     @store.find('user')
+
+EmberGym.UserRoute = Ember.Route.extend
+  model: ->
+    @store.find('user', params.user_id)
