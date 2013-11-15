@@ -1,1 +1,2 @@
-EmberGym.UserController = Ember.ObjectController.extend()
+EmberGym.UserController = Ember.ObjectController.extend(
+)

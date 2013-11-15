@@ -12,5 +12,9 @@ EmberGym.UsersRoute = Ember.Route.extend
     @store.find('user')
 
 EmberGym.UserRoute = Ember.Route.extend
-  model: ->
+  model: (params) ->
     @store.find('user', params.user_id)
+
+EmberGym.UserEditRoute = Ember.Route.extend
+  model: ->
+    @modelFor('user')
