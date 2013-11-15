@@ -18,3 +18,11 @@ EmberGym.UserRoute = Ember.Route.extend
 EmberGym.UserEditRoute = Ember.Route.extend
   model: ->
     @modelFor('user')
+
+EmberGym.UsersCreateRoute = Ember.Route.extend(
+  model: ->
+    Em.Object.create {name: 'hi'}
+  renderTemplate: ->
+    @render "user.edit",
+      controller: "usersCreate"
+)
